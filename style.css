@@ -1,0 +1,444 @@
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* header section--------------------------------- */
+header {
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+/* nav---------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo img {
+    width: 48px;
+    height: 56.008px;
+}
+
+.nav-bar ul {
+    display: flex;
+
+}
+
+.nav-bar li {
+    list-style: none;
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    margin-left: 44px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* nav end------------------------------------ */
+
+.Explore {
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 500px;
+
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+
+}
+
+.discription {
+    padding: 0 200px;
+    color: white;
+
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 16px;
+    /* margin-bottom: 100px; */
+    padding-top: 100px;
+
+
+
+}
+
+.input-fild {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-fild input {
+    width: 144px;
+    height: 38px;
+    /* padding: 10px; */
+    margin-left: 10px;
+    border-radius: 8px;
+    border: 0;
+}
+
+/* header end-------------------------------- */
+
+/* main section----------------------------------------- */
+
+main {
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+
+.popular-tour {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+/*--------------------------------- Destination ------------------------------------section---------------------------------------------------------------- */
+.maldives {
+    grid-area: maldives;
+}
+
+.Indonesia {
+    grid-area: Indonesia;
+}
+
+.Srilanka {
+    grid-area: Srilanka;
+}
+
+.North-America {
+    grid-area: North-America;
+}
+
+.Kashmir {
+    grid-area: Kashmir;
+}
+
+.Bangladesh {
+    grid-area: Bangladesh;
+}
+
+.Bandarban {
+    grid-area: Bandarban;
+}
+
+.Destination {
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "maldives maldives Indonesia Indonesia"
+
+        "Srilanka North-America North-America Kashmir "
+        "Bangladesh Bangladesh Bandarban Bandarban "
+
+    ;
+}
+
+.Destination img {
+    width: 100%;
+    height: 100%;
+}
+
+.maldives h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.Indonesia h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.Srilanka h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.North-America h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.Kashmir h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.Bangladesh h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.Bandarban h1 {
+    color: white;
+    position: relative;
+    top: -200px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.card-item {
+    width: 450px;
+    height: 224px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.card-item-2 {
+    width: 450px;
+    height: 224px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.card-item-3 {
+    width: 450px;
+    height: 224px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.review-card {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 16px;
+    transition: transform 1s;
+}
+
+.review-card img {
+    width: 100%;
+}
+
+.review-card:hover {
+    transform: scale(1.2);
+}
+
+.discount-card {
+    width: 479px;
+    height: 250px;
+    padding: 30px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    top: -400px;
+    left: 490px;
+}
+
+.discount-section img {
+    width: 100%;
+
+    
+}
+
+.cox {
+    display: flex;
+    gap: 50px;
+}
+
+.cox video {
+    width: 100%;
+    border-radius: 16px;
+
+}
+
+.vid h1 {
+    position: relative;
+    bottom: 200px;
+    left: 80px;
+    color: #FFF;
+}
+
+.login {
+    display: flex;
+    gap: 100px;
+}
+
+.input input {
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.input {
+    height: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid orange;
+}
+
+.login img {
+    width: 100%;
+}
+
+.save {
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: orangered;
+    position: relative;
+    bottom: 200px;
+    color: #FFF;
+}
+.footer-icon{
+    text-align: center;
+}
+.footer-icon i{
+    margin-left: 20px;
+}
+footer{
+    background: rgba(19, 19, 24, 0.05);
+}
+
+@media screen and (max-width:600px) {
+
+    header,
+    main {
+        padding: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .nav-bar a {
+        margin-left: 10px;
+
+    }
+
+    .Explore {
+        width: 100%;
+
+    }
+
+    .discription {
+        padding: 10px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) -50%, rgba(19, 19, 24, 0.00) 100%);
+        margin-top: 0;
+        border-radius: 16px;
+
+    }
+
+    .input-fild {
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+
+    .input-fild input {
+        margin-bottom: 20px;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+    }
+
+    .popular-tour img {
+        width: 100%;
+    }
+
+    .Destination {
+        grid-template-areas:
+            "maldives "
+            "Indonesia"
+            "Srilanka"
+            "North-America"
+            "Kashmir"
+            "Bangladesh"
+            "Bandarban"
+        ;
+    }
+
+    .review {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .discount-card {
+        width: 250px;
+        height: 290px;
+
+        left: 50px;
+    }
+
+    .discount-section img {
+        height: 500px;
+    }
+
+    .cox,
+    .login {
+        flex-direction: column;
+    }
+
+    .vid h1 {
+
+        left: 30px;
+        top: -150px;
+
+    }
+    .input{
+        text-align: center;
+    }
+
+}
